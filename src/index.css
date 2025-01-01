@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  color: white;
+  font-family: 'Preahvihear', sans-serif;
+}
+
+
+/* //hero learn  */
+
+.animate-move-left {
+  position: relative;
+  animation: anim 2s linear infinite; /* Apply the animation */
+}
+
+
+@keyframes anim {
+ 0%{
+  
+  color:red;
+ }
+  50%{
+  
+    color:yellow;
+  }
+  100%{
+    color:blue;
+  }
+}
+/* Keyframe Animation */
+@keyframes move-skill {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Animation Class */
+.infinite-move-skill-container {
+  display: flex;
+  overflow: hidden; /* Hide content outside bounds */
+  position: relative;
+}
+
+.infinite-move-skill {
+  animation: move-skill 10s linear infinite;
+  display: flex; /* Ensure content is inline-flex for scrolling */
+  will-change: transform; /* Optimize rendering performance */
+}
