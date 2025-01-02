@@ -1,6 +1,7 @@
 import React from "react";
 import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { SiJavascript, SiCplusplus, SiC, SiMongodb, SiPostman } from "react-icons/si";
+import Progress from "./contents/progress";
 
 const Skill = () => {
   // Icons array representing technologies
@@ -28,7 +29,7 @@ const Skill = () => {
       </div>
 
       {/* Skills Overview Section */}
-      
+      <Progress />
     </div>
   );
 };

@@ -32,7 +32,7 @@ const Hero = () => {
                 <p className='font-Preahvihear pl-10 text-sm '> Currently, I'm a pursuing Engineering at <a href='https://pcampus.edu.np/' className='text-blue-400 cursor-pointer  ' target='_blank'>Pulchowk<BsRocketTakeoffFill /></a></p>
                 <p className='text-sm pt-10 pl-10 text-justify pr-10 sm:w-[500px] '>A tech enthusistic who love to code, love to solve-a-problem  and love to try new technologies! Always focusing to create new things that solve real-world-problems.</p>
             </div>
-            <div className='sm:w-1/2 left-1/4 pt-10 pl-10 gap-2 flex justify-center items-start flex-col w-full '>
+            <div className='sm:w-1/2 left-1/4 pt-4 sm:pt-10 pl-10 gap-2 flex justify-center items-start flex-col w-full '>
                 <button className='rounded-md p-2   bg-purple-600 download-cv '>  Download CV</button>
                
                 <div className='flex felx-row gap-2 pt-2 '>
