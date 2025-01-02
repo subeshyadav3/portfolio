@@ -41,19 +41,19 @@ const Progress = () => {
             animate={isInView ? "visible" : "hidden"}
             exit="exit"
         >
-            <div className='flex flex-col gap-3 w-[400px] mt-10 '>
+            <div className='flex flex-col gap-3 w-[400px] mt-10 items-center'>
                 <label htmlFor="js">Javascript</label>
-                <ProgressBar to='js' className='w-full  ' completed={90} customLabel='' animateOnRender='true' />
+                <ProgressBar to='js' className='w-[80%] sm:w-full ' completed={90} customLabel='' animateOnRender='true' />
                 <label htmlFor="py">Python</label>
-                <ProgressBar className='w-full  ' completed={80} bgColor='#E44700   ' customLabel='' animateOnRender='true' />
+                <ProgressBar className='w-[80%] sm:w-full' completed={80} bgColor='#E44700   ' customLabel='' animateOnRender='true' />
                 <label htmlFor="js">React</label>
-                <ProgressBar className='w-full  ' completed={90} bgColor='#E705C9' customLabel='' animateOnRender='true' />
+                <ProgressBar className='w-[80%] sm:w-full' completed={90} bgColor='#E705C9' customLabel='' animateOnRender='true' />
                 <label htmlFor="js">Node.js</label>
-                <ProgressBar className='w-full ' completed={80} bgColor='#9CAA32' customLabel='' animateOnRender='true' />
+                <ProgressBar className='w-[80%] sm:w-full' completed={80} bgColor='#9CAA32' customLabel='' animateOnRender='true' />
                 <label htmlFor="js">Pandas & Numpy</label>
-                <ProgressBar className='w-full  ' completed={60} bgColor='#F25862' customLabel='' animateOnRender='true' />
+                <ProgressBar className='w-[80%] sm:w-full' completed={60} bgColor='#F25862' customLabel='' animateOnRender='true' />
             </div>
-            <div className='flex  flex-col gap-3 mt-10 pt-5'>
+            <div className='flex  flex-col gap-3 mt-2 pt-3 md:pt-5 md:mt-10'>
                 <div className='flex gap-2 w-[170px] sm:flex-col flex-row problem-solving'>
 
                     <CircularProgressbar value={skills.creativity} text={`${skills.creativity}%`} />
