@@ -132,3 +132,44 @@
 
 
 
+
+
+.problem-solving{
+  position: relative;
+  width: 110px;
+
+}
+
+.problem-solving::after{
+  content:"Creativity";
+  position: absolute;
+  top:30%;
+  left:105%; 
+}
+
+.concentration{
+  position: relative;
+  /* overflow: hidden; */
+  scale:1.3;
+  margin-bottom: 20px;
+} 
+.concentration::after{
+  content:" Concentration";
+  position: absolute;
+  top:30%;
+  left:105%;
+
+}
+
+.creativity{
+  position: relative;
+  /* overflow: hidden; */
+
+} 
+.creativity::after{
+  content:" Problem Solving";
+  position: absolute;
+  top:40%;
+  left:105%;
+
+}
