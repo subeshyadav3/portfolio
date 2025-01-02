@@ -22,7 +22,7 @@ const Hero = () => {
                     <p className='pl-3 font-Preahvihear '>Hello, I am <span className='text-orange-400 font-Preahvihear'>Subesh</span> </p>
                     <p className='pt-10 border-b-[1px] w-fit font-Preahvihear text-sm md:text-md '>A person who </p>
                     <p className='pt-1 text-xl md:text-2xl'> Just Love to </p>
-                    <p className='pt-1 text-xl md:text-2xl'>Code and <span className='text-orange-400 border-[1px] rounded-full p-1 border-gray-500 animate-move-left'>Learn!</span> </p>
+                    <p className='pt-1 text-xl md:text-2xl'>Code and <span className='text-orange-400  rounded-full p-1 hero-learn animate-move-left'>Learn!</span> </p>
 
                 </div>
 
@@ -32,11 +32,12 @@ const Hero = () => {
                 <p className='font-Preahvihear pl-10 text-sm '> Currently, I'm a pursuing Engineering at <a href='https://pcampus.edu.np/' className='text-blue-400 cursor-pointer  ' target='_blank'>Pulchowk<BsRocketTakeoffFill /></a></p>
                 <p className='text-sm pt-10 pl-10 text-justify pr-10 sm:w-[500px] '>A tech enthusistic who love to code, love to solve-a-problem  and love to try new technologies! Always focusing to create new things that solve real-world-problems.</p>
             </div>
-            <div className='sm:w-1/2 left-1/4 pt-10 pl-10 flex flex-col w-full '>
-                <p>Join Us</p>
+            <div className='sm:w-1/2 left-1/4 pt-10 pl-10 gap-2 flex justify-center items-start flex-col w-full '>
+                <button className='rounded-md p-2   bg-purple-600 download-cv '>  Download CV</button>
+               
                 <div className='flex felx-row gap-2 pt-2 '>
-                    <a href="https://github.com/subeshyadav3" target='_blank'><FaGithub /></a>
-                    <a href="#" target='_blank'><CiLinkedin />
+                    <a href="https://github.com/subeshyadav3" target='_blank' ><FaGithub /></a>
+                    <a href="#" target='_blank' ><CiLinkedin />
                     </a>
                 </div>
 

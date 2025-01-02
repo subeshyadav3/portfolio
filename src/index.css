@@ -30,13 +30,18 @@
     color:blue;
   }
 }
+
+
 /* Keyframe Animation */
 @keyframes move-skill {
   0% {
     transform: translateX(0%);
+ 
   }
+ 
   100% {
     transform: translateX(-50%);
+    
   }
 }
 
@@ -45,10 +50,85 @@
   display: flex;
   overflow: hidden; /* Hide content outside bounds */
   position: relative;
+  border-radius: 20%;
 }
 
 .infinite-move-skill {
+
+  
   animation: move-skill 10s linear infinite;
   display: flex; /* Ensure content is inline-flex for scrolling */
   will-change: transform; /* Optimize rendering performance */
 }
+
+.infinite-move-skill-container::before {
+  content: "";
+  height: 100%;
+  width: 50%;
+  
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(19, 172, 116, 0),transparent);
+  position: absolute;
+  left: 0; /* Position it to the left */
+  filter: blur(50px); /* Apply blur effect */
+}
+
+.infinite-move-skill-container::after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(to left, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0));
+  position: absolute;
+  right: 0; /* Position it to the right */
+  filter: blur(50px); /* Apply blur effect */
+}
+
+
+
+
+/* For Download-CV Button */
+.download-cv{
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.download-cv::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  border-radius: 3px;
+  height: 100%;
+  background-color:purple;
+  /* z-index:10; */
+  left:0%;
+  top:0%;
+  z-index: -1;
+
+  transition:all ease .5s;
+}
+.download-cv:hover::before{
+  /* left:100%; */
+  width: 100%;
+  color:black;
+
+
+}
+
+.tittle-style {
+  width: 30%;
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  background-image: linear-gradient(to right, #11071F, #29193f, #11071F);
+  color: whitesmoke;
+  font-size: 20px;
+
+ 
+
+}
+
+
+
