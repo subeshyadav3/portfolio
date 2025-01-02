@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll'; // Import react-scroll Link
 import logo from '../assets/logo.svg';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GiCrossedBones } from "react-icons/gi";
@@ -43,18 +44,18 @@ export default function Nav() {
                         <NavLink to="/" className="hover:border-b-2  transition-all duration-300">
                             Home
                         </NavLink>
-                        <NavLink to="/skills" className="hover:border-b-2  transition-all duration-300">
+                        <Link to="skill" className="hover:border-b-2  transition-all duration-300">
                             Skills
-                        </NavLink>
-                        <NavLink to="/projects" className="hover:border-b-2  transition-all duration-300">
+                        </Link>
+                        <Link to="project" className="hover:border-b-2  transition-all duration-300">
                             Projects
-                        </NavLink>
-                        <NavLink to="/about" className="hover:border-b-2  transition-all duration-300">
+                        </Link>
+                        <Link to="about" className="hover:border-b-2  transition-all duration-300">
                             About
-                        </NavLink>
-                        <NavLink to="/contact" className="hover:border-b-2  transition-all duration-300">
+                        </Link>
+                        <Link to="contact" className="hover:border-b-2  transition-all duration-300">
                             Contact
-                        </NavLink>
+                        </Link>
                     </div>
                 </div>
             ) : navOpen ? (

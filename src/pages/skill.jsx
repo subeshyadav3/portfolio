@@ -18,7 +18,7 @@ const Skill = () => {
   ];
 
   return (
-    <motion.div
+    <motion.div id='skill'
       className="bg-[#11071F] flex flex-col overflow-hidden items-center"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }} // Animate when in view

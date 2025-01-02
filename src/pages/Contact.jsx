@@ -1,45 +1,39 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Add your logic to handle form submission here
-    };
+   
 
     return (
-        <div className='text-black flex flex-col items-center justify-center'>
-            <h1>Contact Us</h1>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label>
+        <div id='contact' className="w-full flex justify-center items-center mt-20 mb-20 bg-[#FCFCFC]">
+        <div className="h-[450px] w-[350px] bg-white p-8 shadow-lg rounded-lg">
+            <form className="flex flex-col space-y-4">
+                <h1 className="text-2xl font-bold text-center">Contact Us</h1>
+
                 <input
                     type="text"
-                    id="name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Your Name"
+                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
-
-                <label htmlFor="email">Email:</label>
                 <input
                     type="email"
-                    id="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Your Email"
+                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
-
-                <label htmlFor="message">Message:</label>
                 <textarea
-                    id="message"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Your Message"
+                    className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    rows="4"
                 ></textarea>
 
-                <button type="submit">Submit</button>
+                <button
+                    type="submit"
+                    className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                >
+                    Send Message
+                </button>
             </form>
         </div>
+    </div>
     );
 };
 
