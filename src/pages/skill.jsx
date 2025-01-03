@@ -22,7 +22,7 @@ const Skill = () => {
       className="bg-[#11071F] flex flex-col overflow-hidden items-center"
       initial={{ opacity: 0.4 }}
       whileInView={{ opacity: 1 }} // Animate when in view
-      viewport={{ once: true, amount: 0.5 }} // Trigger when 20% of the element is in view
+      viewport={{ once: true, amount: 0.3 }} // Trigger when 20% of the element is in view
       transition={{ duration: 1 }}
     >
       {/* Skills Title Section */}

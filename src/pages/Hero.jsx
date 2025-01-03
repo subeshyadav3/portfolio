@@ -53,23 +53,24 @@ const Hero = () => {
                         className="pt-1 text-xl md:text-2xl"
                         initial={{ opacity: 0 }} 
                         animate={{ opacity: 1 }} 
-                        transition={{ duration: 1, delay: 2 }}
+                        transition={{ duration: 1, delay: 1.8 }}
                     >
                         Learn and <span className="text-orange-400 rounded-full p-1 hero-learn animate-move-left">Code!</span>
                     </motion.p>
                 </div>
             </motion.div>
             <motion.div
-                className=""
-                
-                transition={{ duration: 4, delay: 1.5}}
+                className=""   
+                initial={{ opacity: 0}} 
+                animate={{ opacity: 1 }}
+                transition={{ duration: 4}}
             >
                 <div className="pt-10">
                     <motion.p 
                         className="font-Preahvihear md:text-2xl lg:text-3xl sm:text-xl pl-10 pt-5"
                         initial={{ opacity: 0 ,x:110}}
                         animate={{ opacity: 1 ,x:0}}
-                        transition={{ duration: 1 ,bounce:1 }}
+                        transition={{ duration: 1 ,bounce:1,delay:2 }}
                     >
                         I'm a Software Engineer.
                     </motion.p>
@@ -77,7 +78,7 @@ const Hero = () => {
                         className="font-Preahvihear pl-10 text-sm"
                         initial={{ opacity: 0, x:110 }}
                         animate={{ opacity: 1, x:0 }}
-                        transition={{ duration: 1, delay: 0.5,bounce:1 }}
+                        transition={{ duration: 1, delay: 2.2,bounce:1 }}
                     >
                         Currently, I'm pursuing Engineering at Pulchowk
                         <a href="https://pcampus.edu.np/" className="text-blue-400 cursor-pointer" target="_blank">
@@ -88,7 +89,7 @@ const Hero = () => {
                         className="text-sm pt-10 pl-10 text-justify pr-10 max-w-[500px]"
                         initial={{ opacity: 0,y:-20 }}
                         animate={{ opacity: 1,y:0 }}
-                        transition={{ duration: 1, delay: 1 }}
+                        transition={{ duration: 1, delay: 2.5 }}
                     >
                         A tech enthusiast passionate about coding, problem-solving, and exploring new technologies. Dedicated to creating innovative solutions for real-world challenges.
                     </motion.p>
@@ -98,7 +99,7 @@ const Hero = () => {
                         className="rounded-md p-2 bg-purple-600 download-cv"
                         initial={{ opacity: 0,x:105 }}
                         animate={{ opacity: 1,x:0 }}
-                        transition={{ duration: 1, delay: 1.5,bounce:0.25 }}
+                        transition={{ duration: 1, delay: 2.7,bounce:0.25 }}
                     >
                         Download CV
                     </motion.button>
@@ -109,7 +110,7 @@ const Hero = () => {
                             target="_blank"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ duration: 1, delay: 2 }}
+                            transition={{ duration: 1, delay: 2.9 }}
                         >
                             <FaGithub />
                         </motion.a>
@@ -118,7 +119,7 @@ const Hero = () => {
                             target="_blank"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ duration: 1, delay: 2.5 }}
+                            transition={{ duration: 1, delay: 2.9 }}
                         >
                             <CiLinkedin />
                         </motion.a>
