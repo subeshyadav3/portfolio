@@ -22,9 +22,6 @@ export default function Nav() {
     }, []);
 
     const handleNavBar = () => {
-        // setMobileNav((prev) => !prev);
-        console.log(mobileNav)
-        console.log(navOpen)
 
         setNavOpen((prev) => !prev);
     };
