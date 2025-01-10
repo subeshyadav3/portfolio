@@ -1,15 +1,16 @@
-// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Skill from './pages/skill';
-// import Project from './pages/Project';
 import Contact from './pages/Contact';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Project from './pages/Project';
+import './customScrollbar.css'; // Import the custom scrollbar CSS
 
 function App() {
   return (
-    <Router > {/* Adjust the base name if required */}
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

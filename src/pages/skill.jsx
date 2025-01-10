@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 const Skill = () => {
   // Icons array representing technologies
   const icons = [
-    <FaNodeJs className="w-[100px] h-[80px] p-3 text-green-500 rounded-md border-2 m-2 border-purple-900 ring-inset  " />,
-    <FaReact className="w-[100px] h-[80px] p-3 text-blue-500 rounded-md border-2 m-2 border-purple-900 ring-inset " />,
-    <SiJavascript className="w-[100px] h-[80px] p-3 text-yellow-500 rounded-md border-2 m-2  border-purple-900 ring-inset  " />,
-    <FaPython className="w-[100px] h-[80px] p-3 text-blue-400 rounded-md border-2 m-2 border-purple-900 ring-inset " />,
-    <SiCplusplus className="w-[100px] h-[80px] p-3 text-purple-500 rounded-md border-2 m-2 border-purple-900 ring-inset " />,
-    <SiC className="w-[100px] h-[80px] px-3 text-blue-600 rounded-md border-2 m-2 border-purple-900 ring-inset " />,
-    <SiMongodb className="w-[100px] h-[80px] p-3 text-green-600 rounded-md border-2 m-2 border-purple-900 ring-inset " />,
-    <SiPostman className="w-[100px] h-[80px] p-3 text-orange-500 rounded-md border-2 m-2 border-purple-900 ring-inset " />,]
+    <FaNodeJs className="w-[100px] h-[80px] p-3 text-green-500 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
+    <FaReact className="w-[100px] h-[80px] p-3 text-blue-500 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#0f172a] " />,
+    <SiJavascript className="w-[100px] h-[80px] p-3 text-yellow-500 rounded-md border-2 m-2  border-purple-900 ring-inset   bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
+    <FaPython className="w-[100px] h-[80px] p-3 text-blue-400 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#0f172a] " />,
+    <SiCplusplus className="w-[100px] h-[80px] p-3 text-purple-500 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
+    <SiC className="w-[100px] h-[80px] px-3 text-blue-600 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071Ff172a] via-[#1e156e] to-[#11071F] " />,
+    <SiMongodb className="w-[100px] h-[80px] p-3 text-green-600 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
+    <SiPostman className="w-[100px] h-[80px] p-3 text-orange-500 rounded-md border-2 m-2 border-purple-900 ring-inset bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,]
   return (
-    <motion.div id='skill'
-      className="bg-[#11071F] flex flex-col overflow-hidden items-center"
+    <motion.div id='skill' 
+      className="bg-[#11071F] flex flex-col overflow-hidden items-center "
       initial={{ opacity: 0.4 }}
-      whileInView={{ opacity: 1 }} // Animate when in view
+      whileInView={{ opacity: 1 }} // Animate when in 11071F
       viewport={{ once: true, }} // Trigger when 20% of the element is in view
       transition={{ duration: 1 }}
     >

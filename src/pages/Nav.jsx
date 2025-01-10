@@ -36,6 +36,7 @@ export default function Nav() {
             {/* Navigation */}
             {!mobileNav ? (
                 <motion.div
+                    id='nav'
                     className="flex flex-row justify-between sm:px-10 bg-[rgb(26,11,46)] h-[50px] items-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

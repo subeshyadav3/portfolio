@@ -5,12 +5,13 @@ import { BsRocketTakeoffFill } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { motion } from 'framer-motion'; // Importing Framer Motion
+// import line from '../assets/line.svg';
 
 const Hero = () => {
     return (
-        <div className="bg-[#11071F] pb-[100px] flex items-center pt-10 flex-col sm:flex-row justify-center">
+        <div className="pb-[100px] bg-[#11071F] flex items-center pt-10 flex-col sm:flex-row justify-center hero-image"> 
             <motion.div 
-                className="pt-10 flex flex-row" 
+                className="pt-10 flex flex-row z-10" 
                 initial={{ opacity: 0 }} 
                 animate={{ opacity: 1 }} 
                 transition={{ duration: 1 }}
@@ -65,6 +66,7 @@ const Hero = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 4}}
             >
+                {/* <img src={line} className='absolute h-[50%]]' /> */}
                 <div className="pt-10">
                     <motion.p 
                         className="font-Preahvihear md:text-2xl lg:text-3xl sm:text-xl pl-10 pt-5"
@@ -86,7 +88,7 @@ const Hero = () => {
                         </a>
                     </motion.p>
                     <motion.p 
-                        className="text-sm pt-10 pl-10 text-justify pr-10 max-w-[500px]"
+                        className="text-sm pt-10 pl-10  pr-10 max-w-[500px]"
                         initial={{ opacity: 0,y:-20 }}
                         animate={{ opacity: 1,y:0 }}
                         transition={{ duration: 1, delay: 2.5 }}
