@@ -7,22 +7,20 @@ import { motion } from "framer-motion";
 const Skill = () => {
   // Icons array representing technologies
   const icons = [
-    <FaNodeJs className="w-[80px] h-[50px] px-3 text-green-500" />,
-    <FaReact className="w-[80px] h-[50px] px-3 text-blue-500" />,
-    <SiJavascript className="w-[80px] h-[50px] px-3 text-yellow-500" />,
-    <FaPython className="w-[80px] h-[50px] px-3 text-blue-400" />,
-    <SiCplusplus className="w-[80px] h-[50px] px-3 text-purple-500" />,
-    <SiC className="w-[80px] h-[50px] px-3 text-blue-700" />,
-    <SiMongodb className="w-[80px] h-[50px] px-3 text-green-600" />,
-    <SiPostman className="w-[80px] h-[50px] px-3 text-orange-500" />,
-  ];
-
+    <FaNodeJs className="w-[100px] h-[80px] p-3 text-green-500 rounded-md border-2 m-2 border-purple-900 ring-inset  " />,
+    <FaReact className="w-[100px] h-[80px] p-3 text-blue-500 rounded-md border-2 m-2 border-purple-900 ring-inset " />,
+    <SiJavascript className="w-[100px] h-[80px] p-3 text-yellow-500 rounded-md border-2 m-2  border-purple-900 ring-inset  " />,
+    <FaPython className="w-[100px] h-[80px] p-3 text-blue-400 rounded-md border-2 m-2 border-purple-900 ring-inset " />,
+    <SiCplusplus className="w-[100px] h-[80px] p-3 text-purple-500 rounded-md border-2 m-2 border-purple-900 ring-inset " />,
+    <SiC className="w-[100px] h-[80px] px-3 text-blue-600 rounded-md border-2 m-2 border-purple-900 ring-inset " />,
+    <SiMongodb className="w-[100px] h-[80px] p-3 text-green-600 rounded-md border-2 m-2 border-purple-900 ring-inset " />,
+    <SiPostman className="w-[100px] h-[80px] p-3 text-orange-500 rounded-md border-2 m-2 border-purple-900 ring-inset " />,]
   return (
     <motion.div id='skill'
       className="bg-[#11071F] flex flex-col overflow-hidden items-center"
       initial={{ opacity: 0.4 }}
       whileInView={{ opacity: 1 }} // Animate when in view
-      viewport={{ once: true, amount: 0.3 }} // Trigger when 20% of the element is in view
+      viewport={{ once: true, }} // Trigger when 20% of the element is in view
       transition={{ duration: 1 }}
     >
       {/* Skills Title Section */}
@@ -37,7 +35,7 @@ const Skill = () => {
 
       {/* Scrolling Container for Skills Icons */}
       <motion.div
-        className="infinite-move-skill-container sm:w-1/2 p-5 flex overflow-hidden w-full"
+        className="infinite-move-skill-container sm:max-w-[80%] p-5 flex overflow-hidden w-full"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -47,17 +45,36 @@ const Skill = () => {
           whileInView={{ x: ["0%", "-100%"] }} // Trigger scrolling effect
           transition={{
             repeat: "loop", // Infinite loop
-            duration: 20, // Adjust speed of scrolling
+            duration: 5, // Adjust speed of scrolling
           }}
         >
           {icons}
           {icons} {/* Duplicate for seamless scrolling */}
         </motion.div>
+
+      </motion.div><motion.div
+        className="infinite-move-skill-container sm:max-w-[80%] p-5 flex overflow-hidden w-full"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
+        <motion.div
+          className="infinite-move-skill-2 flex"
+          whileInView={{ x: ["0%", "-100%"] }} // Trigger scrolling effect
+          transition={{
+            repeat: "loop", // Infinite loop
+            duration: 5, // Adjust speed of scrolling
+          }}
+        >
+          {icons}
+          {icons} {/* Duplicate for seamless scrolling */}
+        </motion.div>
+
       </motion.div>
 
-      
-        <Progress />
-      
+
+      <Progress />
+
     </motion.div>
   );
 };

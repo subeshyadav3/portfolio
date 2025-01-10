@@ -47,26 +47,46 @@
 
 /* Animation Class */
 .infinite-move-skill-container {
+  /* background-image: linear-gradient(45deg, #11071F 40%, rgb(50, 54, 146) 45%, rgb(67, 49, 125) 50%, #11071F 55%); */
   display: flex;
   overflow: hidden; /* Hide content outside bounds */
   position: relative;
-  border-radius: 20%;
+  /* border-radius: 20%; */
 }
+
+
+
 
 .infinite-move-skill {
 
   
-  animation: move-skill 10s linear infinite;
+  animation: move-skill 25s linear infinite;
   display: flex; /* Ensure content is inline-flex for scrolling */
   will-change: transform; /* Optimize rendering performance */
 }
 
+@keyframes move-skill-2 {
+  0% {
+    transform: translateX(-50%);
+ 
+  }
+ 
+  100% {
+    transform: translateX(0%);
+    
+  }
+}
+.infinite-move-skill-2{
+  animation: move-skill-2 25s linear infinite;
+  display: flex; /* Ensure content is inline-flex for scrolling */
+  will-change: transform; /* Optimize rendering performance */
+}
 .infinite-move-skill-container::before {
   content: "";
   height: 100%;
   width: 50%;
   
-  background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(19, 172, 116, 0),transparent);
+  /* background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(19, 172, 116, 0),transparent); */
   position: absolute;
   left: 0; /* Position it to the left */
   filter: blur(50px); /* Apply blur effect */
@@ -76,7 +96,7 @@
   content: "";
   height: 100%;
   width: 50%;
-  background: linear-gradient(to left, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0));
+  /* background: linear-gradient(to left, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0)); */
   position: absolute;
   right: 0; /* Position it to the right */
   filter: blur(50px); /* Apply blur effect */
