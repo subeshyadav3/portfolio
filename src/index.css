@@ -263,35 +263,25 @@
 
 
 /* hero image */
-
 .hero-image {
-  
-  background-image: url("hero.svg");
+  background-image: url("/hero.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
 }
-
 
 @media screen and (max-width: 768px) {
   .hero-image {
-    background-image: url("hero.svg");
     border-bottom-right-radius: 8%;
-    background-size:cover;
-    background-repeat: no-repeat; 
+    background-size: cover;
     background-position: left;
   }
-  
 }
+
 @media screen and (max-width: 508px) {
   .hero-image {
-    background-image: url("hero.svg");
     border-bottom-right-radius: 9%;
-    background-size:cover;
-    background-repeat: no-repeat; 
+    background-size: cover;
     background-position: left;
   }
-  
 }
-
-
