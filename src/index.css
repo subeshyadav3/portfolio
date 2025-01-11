@@ -266,7 +266,7 @@
 
 .hero-image {
   
-  background-image: url("src/assets/hero.svg");
+  background-image: url("hero.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position:center;
@@ -275,7 +275,7 @@
 
 @media screen and (max-width: 768px) {
   .hero-image {
-    background-image: url("src/assets/hero.svg");
+    background-image: url("hero.svg");
     border-bottom-right-radius: 8%;
     background-size:cover;
     background-repeat: no-repeat; 
@@ -285,7 +285,7 @@
 }
 @media screen and (max-width: 508px) {
   .hero-image {
-    background-image: url("src/assets/hero.svg");
+    background-image: url("hero.svg");
     border-bottom-right-radius: 9%;
     background-size:cover;
     background-repeat: no-repeat; 
