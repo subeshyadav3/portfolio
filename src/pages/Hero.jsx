@@ -7,9 +7,10 @@ import { CiLinkedin } from "react-icons/ci";
 import { motion } from 'framer-motion'; // Importing Framer Motion
 // import line from '../assets/line.svg';
 
+
 const Hero = () => {
-    return (
-        <div className="pb-[100px] bg-[#11071F] flex items-center pt-10 flex-col sm:flex-row justify-center hero-image"> 
+    return ( //bg-[#11071F]
+        <div className="pb-[100px]  flex items-center pt-10 flex-col sm:flex-row justify-center hero-image"> 
             <motion.div 
                 className="pt-10 flex flex-row z-10" 
                 initial={{ opacity: 0 }} 
@@ -28,7 +29,7 @@ const Hero = () => {
                 <div className='flex flex-col'>
                     <motion.p 
                         className="pl-3 font-Preahvihear" 
-                        initial={{ opacity: 0 }} 
+                        initial={{ opacity: 0, }} 
                         animate={{ opacity: 1 }} 
                         transition={{ duration: 1, delay: 0.5 }}
                     >

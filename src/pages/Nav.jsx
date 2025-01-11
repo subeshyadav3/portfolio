@@ -75,6 +75,7 @@ export default function Nav() {
                 </motion.div>
             ) : navOpen ? (
                 <motion.div
+                    id='nav'
                     className="relative flex flex-col h-screen bg-[rgb(26,11,46)] gap-5 items-center justify-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -107,8 +108,8 @@ export default function Nav() {
                         </Link>
                     </motion.div>
                 </motion.div>
-            ) : (
-                <div className="bg-[rgb(26,11,46)] flex justify-between pr-5 items-center">
+            ) : ( //
+                <div className=" flex bg-[rgb(26,11,46)]  justify-between pr-5 items-center hero-image-nav">
                     <div>
                         <img src={logo} alt="Logo" className="w-15 h-[60px] ml-10" />
                     </div>

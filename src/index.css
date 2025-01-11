@@ -4,6 +4,7 @@
 
 
 :root{
+  background-color: #11071F;
   color: white;
   font-family: 'Preahvihear', sans-serif;
 }
@@ -262,10 +263,35 @@
 
 
 /* hero image */
-/* 
-.hero-image {
-  background-image: url("public/hero.svg");
-  background-size: cover;
-  /* opacity: 0.7; */
 
-/* }  */
+.hero-image {
+  
+  background-image: url("src/assets/hero.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    background-image: url("src/assets/hero.svg");
+    border-bottom-right-radius: 8%;
+    background-size:cover;
+    background-repeat: no-repeat; 
+    background-position: left;
+  }
+  
+}
+@media screen and (max-width: 508px) {
+  .hero-image {
+    background-image: url("src/assets/hero.svg");
+    border-bottom-right-radius: 9%;
+    background-size:cover;
+    background-repeat: no-repeat; 
+    background-position: left;
+  }
+  
+}
+
+

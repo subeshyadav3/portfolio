@@ -21,6 +21,7 @@ const Skill = () => {
       initial={{ opacity: 0.4 }}
       whileInView={{ opacity: 1 }} // Animate when in 11071F
       viewport={{ once: true, }} // Trigger when 20% of the element is in view
+      
       transition={{ duration: 1 }}
     >
       {/* Skills Title Section */}
