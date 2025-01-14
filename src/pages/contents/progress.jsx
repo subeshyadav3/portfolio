@@ -13,7 +13,6 @@ const HALF_ROTATION_RANGE = 32.5 / 2;
 const Progress = () => {
 
 
-
     const ref = useRef(null);
     const x = useMotionValue(0);
     const y = useMotionValue(0);
