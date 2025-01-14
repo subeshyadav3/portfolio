@@ -1,0 +1,332 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  background-color: #11071F;
+  color: white;
+  font-family: 'Preahvihear', sans-serif;
+}
+
+
+/* //hero learn  */
+
+.animate-move-left {
+  position: relative;
+  animation: anim 2s linear infinite; /* Apply the animation */
+}
+
+
+@keyframes anim {
+ 0%{
+  
+  color:red;
+ }
+  50%{
+  
+    color:yellow;
+  }
+  100%{
+    color:blue;
+  }
+}
+
+
+/* Keyframe Animation */
+@keyframes move-skill {
+  0% {
+    transform: translateX(0%);
+ 
+  }
+ 
+  100% {
+    transform: translateX(-50%);
+    
+  }
+}
+
+/* Animation Class */
+.infinite-move-skill-container {
+  /* background-image: linear-gradient(45deg, #11071F 40%, rgb(50, 54, 146) 45%, rgb(67, 49, 125) 50%, #11071F 55%); */
+  display: flex;
+  overflow: hidden; /* Hide content outside bounds */
+  position: relative;
+  /* border-radius: 20%; */
+}
+
+
+
+
+.infinite-move-skill {
+
+    
+  animation: move-skill 25s linear infinite;
+  display: flex; /* Ensure content is inline-flex for scrolling */
+  will-change: transform; /* Optimize rendering performance */
+}
+
+@keyframes move-skill-2 {
+  0% {
+    transform: translateX(-50%);
+ 
+  }
+ 
+  100% {
+    transform: translateX(0%);
+    
+  }
+}
+.infinite-move-skill-2{
+  animation: move-skill-2 25s linear infinite;
+  display: flex; /* Ensure content is inline-flex for scrolling */
+  will-change: transform; /* Optimize rendering performance */
+}
+.infinite-move-skill-container::before {
+  content: "";
+  height: 100%;
+  width: 50%;
+  
+  /* background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(19, 172, 116, 0),transparent); */
+  position: absolute;
+  left: 0; /* Position it to the left */
+  filter: blur(50px); /* Apply blur effect */
+}
+
+.infinite-move-skill-container::after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  /* background: linear-gradient(to left, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0)); */
+  position: absolute;
+  right: 0; /* Position it to the right */
+  filter: blur(50px); /* Apply blur effect */
+}
+
+
+
+
+/* For Download-CV Button */
+.download-cv{
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.download-cv::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  border-radius: 3px;
+  height: 100%;
+  background-color:purple;
+  /* z-index:10; */
+  left:0%;
+  top:0%;
+  z-index: -1;
+
+  transition:all ease .5s;
+}
+.download-cv:hover::before{
+  /* left:100%; */
+  width: 100%;
+  color:black;
+
+
+}
+
+.tittle-style {
+  min-width: 300px;
+  /* max-width: 500px; */
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  /* border-radius: 20%; */
+  border: 1px solid #270d4c;
+  background-image: linear-gradient(to right, #11071F, #1f0b3c, #11071F);
+  color: whitesmoke;
+  font-size: 20px;
+  z-index: 1;
+ 
+
+}
+
+.tittle-style::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(37, 15, 78);
+  z-index: 1;
+}
+
+.tittle-style::after {
+  content: "";
+  position: absolute;
+  right: -100%;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(37, 15, 78);
+  z-index: 1;
+}
+
+
+
+
+
+
+ /* skill section title */
+
+ .contact {
+  background-color: #11071F;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact::before,
+.contact::after {
+  content: "";
+  position: absolute;
+  width: 100%; /* Adjust the width for the parabola shape */
+  height: 300px; /* Adjust the height for the parabola shape */
+  background-image: radial-gradient(circle, rgba(78, 25, 109, 0.3) 10%, transparent 10%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  border-radius: 50% 50% 50% 50%; /* Creates a more circular/elliptical shape */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.contact::before {
+  top: 60px; /* Adjust for parabola positioning */
+  right: 100px; /* Slight offset for better shape */
+  transform: translate(50%, 0) rotate(45deg); /* Adjust to get a more parabola-like shape */
+}
+
+.contact::after {
+  bottom: 70px; /* Adjust for parabola positioning */
+  left: 20px; /* Slight offset for better shape */
+  transform: translate(-50%, 0) rotate(225deg); /* Adjust to get a more parabola-like shape */
+}
+
+
+
+
+/* hero image */
+.hero-image {
+  background-image: url("/hero.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    border-bottom-right-radius: 8%;
+    background-size: cover;
+    background-position: left;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  .hero-image {
+    border-bottom-right-radius: 9%;
+    background-size: cover;
+    background-position: left;
+  }
+}
+
+
+.box-image{
+  background-image: url("/box.png");
+}
+
+
+
+/* skill-box animation  */
+.skill-box{
+  position:relative;
+  overflow:hidden;
+  /* border:3px solid white; */
+  z-index: 10;
+  border-radius: 5%;
+  filter:drop-shadow(0 0 10px rgb(10, 7, 106));
+  justify-content: center;
+}
+
+
+.skill-box::before{
+  content:'';
+  position:absolute;
+  width:80px;
+  height:150%;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(60,50,209,0.9164915966386554) 49%, rgba(0,212,255,1) 100%);  animation: rotate 20s linear infinite;
+  transform-origin: center;
+
+}
+
+.skill-box::after{
+  content:"";
+  position: absolute;
+  inset: 3px;
+  
+  /* width: ; */
+  background-color: #11071F;
+  
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.skill-box::before {
+  z-index: 1;
+}
+
+.skill-box::after {
+  z-index: 2; 
+}
+
+.skill-box > * {
+  position: relative;
+  z-index: 3;
+}
+
+
+
+
+
+/* nav animation  */
+.nav-animation {
+  position: relative;
+  display: inline-block; /* Adjust based on your element */
+}
+
+.nav-animation::before {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Adjust if needed */
+  left: 0;
+  width: 0%;
+  height: 1px; /* Adjust the thickness of the underline */
+  background-color: blueviolet; /* Line color */
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+.nav-animation:hover::before {
+  width: 100%;
+}
+
+
+
+
+
