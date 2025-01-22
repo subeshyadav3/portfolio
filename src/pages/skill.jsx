@@ -3,6 +3,7 @@ import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { SiJavascript, SiCplusplus, SiC, SiMongodb, SiPostman } from "react-icons/si";
 import Progress from "./contents/progress";
 import { motion } from "framer-motion";
+import Title from "./components/title";
 
 const Skill = () => {
   // Icons array representing technologies
@@ -24,15 +25,9 @@ const Skill = () => {
 
       transition={{ duration: 1 }}
     >
-      {/* Skills Title Section */}
-      <motion.p
-        className="tittle-style"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, type: "spring", stiffness: 100 }}
-      >
-        Skills
-      </motion.p>
+     
+      {/* Title */}
+      <Title title="Skills" />
 
       {/* Scrolling Container for Skills Icons */}
       <motion.div

@@ -50,7 +50,7 @@ const Progress = () => {
 
     return (
         <motion.div
-            className="progress my-5 flex flex-col lg:flex-row gap-8 justify-center items-center sm:mx-2"
+            className="progress my-5 flex flex-col lg:flex-row gap-8 justify-center items-center sm:mx-2 mb-10"
             ref={ref}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
@@ -71,7 +71,7 @@ const Progress = () => {
                 // exit={{ opacity: 0, y: -50 }}
                 className='flex flex-col gap-3 w-[350px] sm:w-[400px] skill-box mt-10 items-center  '>
 
-                <div className='w-full p-5 flex flex-col gap-2'>
+                <div className='w-full p-5 flex flex-col gap-2 my-10'>
                     <h2 className='flex items-center justify-center mb-5 pb-2 border-b-2 border-[#230e41] text-xl'>
                         Programming
                     </h2>
@@ -91,7 +91,7 @@ const Progress = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
                 className='flex flex-col gap-3 w-[350px] sm:w-[400px] mt-10 items-center skill-box '>
-                <div className='w-full p-5 flex flex-col gap-2'>
+                <div className='w-full p-5 flex flex-col gap-2 my-10'>
                     <h2 className='flex items-center justify-center mb-5 pb-2 border-b-2 border-[#230e41] text-xl'>
                         Web Dev
                     </h2>

@@ -37,7 +37,7 @@ export default function Nav() {
             {!mobileNav ? (
                 <motion.div
                     id='nav'
-                    className="flex flex-row justify-between sm:px-10 bg-[rgb(26,11,46)] h-[50px] items-center"
+                    className="flex flex-row justify-between sm:px-10 bg-[#11071F] h-[50px] items-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
@@ -76,7 +76,7 @@ export default function Nav() {
             ) : navOpen ? (
                 <motion.div
                     id='nav'
-                    className="relative flex flex-col h-screen bg-[rgb(26,11,46)] gap-5 items-center justify-center"
+                    className="relative flex flex-col h-screen bg-[#11071F] gap-5 items-center justify-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
@@ -109,7 +109,7 @@ export default function Nav() {
                     </motion.div>
                 </motion.div>
             ) : ( //
-                <div className=" flex bg-[rgb(26,11,46)]  justify-between pr-5 items-center hero-image-nav">
+                <div className=" flex bg-[#11071F] justify-between pr-5 items-center hero-image-nav" id='nav'>
                     <div>
                         <img src={logo} alt="Logo" className="w-15 h-[60px] ml-10" />
                     </div>
