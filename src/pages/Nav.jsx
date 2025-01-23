@@ -27,8 +27,9 @@ export default function Nav() {
     };
 
     const navLinkVariants = {
-        hidden: { opacity: 0, x: -50 },
-        visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+        hidden: { opacity: 0, x: -50,scale:0.6 },
+        visible: { opacity: 1, x: 0,scale:1, transition: { duration: 0.5, ease: 'easeOut' } },
+        
     };
 
     return (

@@ -21,9 +21,9 @@ const Hero = () => {
         >
             <motion.div
                 className="pt-10 flex z-10 items-center justify-center w-full md:w-1/2   relative"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
+                initial={{ opacity: 0,scale:0.5 }}
+                animate={{ opacity: 1,scale:1 }}
+                transition={{ duration: 1, delay: 0.5 }}
             > 
 
                 
@@ -44,24 +44,24 @@ const Hero = () => {
                 className="md:w-1/2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 4 }}
+             
             >
 
                 {/* <img src={line} className='absolute h-[50%]]' /> */}
                 <div className="pt-10">
                     <motion.p
                         className="font-Preahvihear md:text-2xl lg:text-3xl sm:text-xl pl-10 pt-5"
-                        initial={{ opacity: 0, x: 110 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, bounce: 1, delay: 2 }}
+                        initial={{ opacity: 0, y: -20,scale:0.9 }}
+                        animate={{ opacity: 1, y: 0,scale:1 }}
+                        transition={{ duration: 1, delay: 0.3 }}
                     >
                         Hi, I'm Subesh Yadav.
                     </motion.p>
                     <motion.p
                         className="font-Preahvihear pl-10 text-sm"
-                        initial={{ opacity: 0, x: 110 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, delay: 2.2, bounce: 1 }}
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: .5 }}
                     >
                         Currently, pursuing computer Engineering at Pulchowk
                         <a href="https://pcampus.edu.np/" className="text-blue-400 pl-1 cursor-pointer" target="_blank">
@@ -70,9 +70,9 @@ const Hero = () => {
                     </motion.p>
                     <motion.p
                         className="text-sm pt-10 pl-10  pr-10 max-w-[500px]"
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 2.5 }}
+                        initial={{  x: 80,opacity:0 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1, delay: 1.1 }}
                     >
                         A tech enthusiast passionate about coding, problem-solving, and exploring new technologies. Dedicated to creating innovative solutions for real-world challenges.
                     </motion.p>
@@ -80,9 +80,9 @@ const Hero = () => {
                 <div className="pt-4 sm:pt-10 pl-10 gap-2 flex justify-center items-start flex-col w-full">
                     <motion.button
                         className="rounded-md p-2 bg-purple-600 download-cv"
-                        initial={{ opacity: 0, x: 105 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, delay: 2.7, bounce: 0.25 }}
+                        initial={{ opacity: 0,scale:0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 1.2, bounce: 0.25 }}
                     >
                         Download CV
                     </motion.button>
@@ -114,3 +114,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

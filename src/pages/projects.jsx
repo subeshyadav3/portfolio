@@ -5,7 +5,7 @@ import ProjectCard from './components/ProjectCard';
 const Project = () => {
   
     return (
-        <div className='flex justify-center items-center flex-col' id='project'>
+        <div className='flex justify-center items-center flex-col overflow-x-hidden' id='project'>
             <Title title="Projects" font='font-ougkeh'/>
 
 
