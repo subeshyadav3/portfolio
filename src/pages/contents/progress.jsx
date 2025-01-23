@@ -67,7 +67,7 @@ const Progress = () => {
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
 
-                transition={{ duration: 1, delay: 0.5 }}
+                transition={{ duration: 1, delay: 0 }}
                 // exit={{ opacity: 0, y: -50 }}
                 className='flex flex-col gap-3 w-[350px] sm:w-[400px] skill-box mt-10 items-center  '>
 
@@ -89,7 +89,7 @@ const Progress = () => {
 
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
+                transition={{ duration: 1, delay: 0 }}
                 className='flex flex-col gap-3 w-[350px] sm:w-[400px] mt-10 items-center skill-box '>
                 <div className='w-full p-5 flex flex-col gap-2 my-10'>
                     <h2 className='flex items-center justify-center mb-5 pb-2 border-b-2 border-[#230e41] text-xl'>

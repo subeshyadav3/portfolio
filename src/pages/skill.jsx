@@ -8,14 +8,14 @@ import Title from "./components/title";
 const Skill = () => {
   // Icons array representing technologies
   const icons = [
-    <FaNodeJs className="w-[80px] h-[60px] sm:w-[100px] h-[80px]  p-3 text-green-500 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
-    <FaReact className="w-[80px] h-[60px] sm:w-[100px] h-[80px]  p-3 text-blue-500 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#0f172a] " />,
-    <SiJavascript className="w-[80px] h-[60px] sm:w-[100px] h-[80px]  p-3 text-yellow-500 rounded-md border-2 m-2  border-purple-900 ring-inset   bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
-    <FaPython className="w-[80px] h-[60px] sm:w-[100px] h-[80px]  p-3 text-blue-400 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#0f172a] " />,
-    <SiCplusplus className="w-[80px] h-[60px] sm:w-[100px] h-[80px]  p-3 text-purple-500 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
-    <SiC className="w-[80px] h-[60px] sm:w-[100px] h-[80px]  px-3 text-blue-600 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071Ff172a] via-[#1e156e] to-[#11071F] " />,
-    <SiMongodb className="w-[80px] h-[60px]  sm:w-[100px] h-[80px] p-3 text-green-600 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
-    <SiPostman className="w-[80px] h-[60px]  sm:w-[100px] h-[80px] p-3 text-orange-500 rounded-md border-2 m-2 border-purple-900 ring-inset bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,]
+    <FaNodeJs className="w-[80px] h-[60px] sm:w-[100px] sm:h-[70px]  p-3 text-green-500 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
+    <FaReact className="w-[80px] h-[60px] sm:w-[100px] sm:h-[70px]  p-3 text-blue-500 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#0f172a] " />,
+    <SiJavascript className="w-[80px] h-[60px] sm:w-[100px] sm:h-[70px]  p-3 text-yellow-500 rounded-md border-2 m-2  border-purple-900 ring-inset   bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
+    <FaPython className="w-[80px] h-[60px] sm:w-[100px] sm:h-[70px]  p-3 text-blue-400 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#0f172a] " />,
+    <SiCplusplus className="w-[80px] h-[60px] sm:w-[100px] sm:h-[70px]  p-3 text-purple-500 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
+    <SiC className="w-[80px] h-[60px] sm:w-[100px] sm:h-[70px]  px-3 text-blue-600 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071Ff172a] via-[#1e156e] to-[#11071F] " />,
+    <SiMongodb className="w-[80px] h-[60px]  sm:w-[100px] sm:h-[70px] p-3 text-green-600 rounded-md border-2 m-2 border-purple-900 ring-inset  bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,
+    <SiPostman className="w-[80px] h-[60px]  sm:w-[100px] sm:h-[70px] p-3 text-orange-500 rounded-md border-2 m-2 border-purple-900 ring-inset bg-gradient-to-bl from-[#11071F] via-[#1e156e] to-[#11071F] " />,]
   return (
     <motion.div id='skill'
       className="bg-[#11071F] flex flex-col overflow-hidden items-center sm:mb-10 "
@@ -31,7 +31,7 @@ const Skill = () => {
 
       {/* Scrolling Container for Skills Icons */}
       <motion.div
-        className="infinite-move-skill-container sm:max-w-[80%] p-5 flex overflow-hidden w-full"
+        className="infinite-move-skill-container sm:max-w-[80%] p-2 flex overflow-hidden w-full"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -49,7 +49,7 @@ const Skill = () => {
         </motion.div>
 
       </motion.div><motion.div
-        className="infinite-move-skill-container sm:max-w-[80%] p-5 flex overflow-hidden w-full"
+        className="infinite-move-skill-container sm:max-w-[80%] p-2 flex overflow-hidden w-full"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}

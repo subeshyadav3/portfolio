@@ -8,6 +8,7 @@
   color: white;
   src: url('./assets/fonts/Ougkeh.otf') format('truetype');
   font-family: 'Preahvihear', sans-serif,'Ougkeh';
+  overflow-x: hidden;
   /* font-family: ', sans-serif; */
 }
 
@@ -607,20 +608,26 @@
   border-radius: 50%;
   
   position: relative;
-  animation: main-photo-rotate 5s linear infinite alternate;
+  animation: main-photo-rotate 9s linear infinite alternate;
 }
 
 @keyframes main-photo-rotate {
   0% {
-    filter: drop-shadow(0 0 15px rgb(10, 7, 106));
+    filter: drop-shadow(0 0 5px rgb(10, 7, 106));
     transform: rotate(0deg);
   }
   50% {
-    filter: drop-shadow(0 0 20px rgb(10, 7, 106));
+    filter: drop-shadow(0 0 10px rgb(10, 7, 106));
     transform: rotate(-3deg);
   }
+  70% {
+    filter: drop-shadow(0 0 20px rgb(10, 7, 106));
+    transform: rotate(1deg);
+  }
+
   100% {
-    filter: drop-shadow(0 0 5px rgb(10, 7, 106));
+
+    filter: drop-shadow(0 0 10px rgb(10, 7, 106));
     transform: rotate(3deg);
   }
 }
