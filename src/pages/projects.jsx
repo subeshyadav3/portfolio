@@ -2,10 +2,10 @@ import React from 'react';
 import Title from './components/title';
 import ProjectCard from './components/ProjectCard';
 
-
 const Project = () => {
+  
     return (
-        <div className='flex justify-center items-center flex-col'>
+        <div className='flex justify-center items-center flex-col' id='project'>
             <Title title="Projects" font='font-ougkeh'/>
 
 

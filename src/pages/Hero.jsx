@@ -17,7 +17,8 @@ import { SiTailwindcss } from "react-icons/si";
 
 const Hero = () => {
     return ( //bg-[#11071F]
-        <div id='hero' className="pb-[100px]  flex items-center  pt-10 flex-col md:flex-row justify-center hero-image  h-[100vh]" id='home'>
+        <div id='hero' className="pb-[100px]  flex items-center  pt-10 flex-col md:flex-row justify-center hero-image  h-[100vh]"
+        >
             <motion.div
                 className="pt-10 flex z-10 items-center justify-center w-full md:w-1/2   relative"
                 initial={{ opacity: 0 }}

@@ -6,6 +6,7 @@
 :root{
   background-color: #11071F;
   color: white;
+  /* width: 100vw; */
   src: url('./assets/fonts/Ougkeh.otf') format('truetype');
   font-family: 'Preahvihear', sans-serif,'Ougkeh';
   overflow-x: hidden;

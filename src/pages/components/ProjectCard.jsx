@@ -26,7 +26,7 @@ const ProjectCard = ({ title, description, photo, stack, projectLink }) => {
         className="w-full h-[180px] pt-2 opacity-80 rounded-lg"
       />
       <p className="py-5 text-wrap text-sm">{description}</p>
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-2 w-full items-center justify-center sm:justify-start">
         {stack.map((item, index) => (
           <h1
             key={index}
