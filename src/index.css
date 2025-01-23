@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 
-:root{
+:root {
   background-color: #11071F;
   color: white;
-  /* width: 100vw; */
+
   src: url('./assets/fonts/Ougkeh.otf') format('truetype');
-  font-family: 'Preahvihear', sans-serif,'Ougkeh';
+  font-family: 'Preahvihear', sans-serif, 'Ougkeh';
   overflow-x: hidden;
-  /* font-family: ', sans-serif; */
+
 }
 
 
@@ -18,21 +18,23 @@
 
 .animate-move-left {
   position: relative;
-  animation: anim 2s linear infinite; /* Apply the animation */
+  animation: anim 2s linear infinite;
 }
 
 
 @keyframes anim {
- 0%{
-  
-  color:red;
- }
-  50%{
-  
-    color:yellow;
+  0% {
+
+    color: red;
   }
-  100%{
-    color:blue;
+
+  50% {
+
+    color: yellow;
+  }
+
+  100% {
+    color: blue;
   }
 }
 
@@ -41,22 +43,21 @@
 @keyframes move-skill {
   0% {
     transform: translateX(0%);
- 
+
   }
- 
+
   100% {
     transform: translateX(-50%);
-    
+
   }
 }
 
 /* Animation Class */
 .infinite-move-skill-container {
-  /* background-image: linear-gradient(45deg, #11071F 40%, rgb(50, 54, 146) 45%, rgb(67, 49, 125) 50%, #11071F 55%); */
   display: flex;
-  overflow: hidden; /* Hide content outside bounds */
+  overflow: hidden;
   position: relative;
-  /* border-radius: 20%; */
+
 }
 
 
@@ -64,77 +65,79 @@
 
 .infinite-move-skill {
 
-    
+
   animation: move-skill 25s linear infinite;
-  display: flex; /* Ensure content is inline-flex for scrolling */
-  will-change: transform; /* Optimize rendering performance */
+  display: flex;
+  will-change: transform;
 }
 
 @keyframes move-skill-2 {
   0% {
     transform: translateX(-50%);
- 
+
   }
- 
+
   100% {
     transform: translateX(0%);
-    
+
   }
 }
-.infinite-move-skill-2{
+
+.infinite-move-skill-2 {
   animation: move-skill-2 25s linear infinite;
-  display: flex; /* Ensure content is inline-flex for scrolling */
-  will-change: transform; /* Optimize rendering performance */
+  display: flex;
+  will-change: transform;
 }
+
 .infinite-move-skill-container::before {
   content: "";
   height: 100%;
   width: 50%;
-  
-  /* background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(19, 172, 116, 0),transparent); */
+
   position: absolute;
-  left: 0; /* Position it to the left */
-  filter: blur(50px); /* Apply blur effect */
+  left: 0;
+  filter: blur(50px);
 }
 
 .infinite-move-skill-container::after {
   content: "";
   height: 100%;
   width: 50%;
-  /* background: linear-gradient(to left, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0)); */
+
   position: absolute;
-  right: 0; /* Position it to the right */
-  filter: blur(50px); /* Apply blur effect */
+  right: 0;
+  filter: blur(50px);
 }
 
 
 
 
 /* For Download-CV Button */
-.download-cv{
+.download-cv {
   position: relative;
   overflow: hidden;
   z-index: 10;
 }
 
-.download-cv::before{
+.download-cv::before {
   content: "";
   position: absolute;
   width: 5px;
   border-radius: 3px;
   height: 100%;
-  background-color:purple;
-  /* z-index:10; */
-  left:0%;
-  top:0%;
+  background-color: purple;
+
+  left: 0%;
+  top: 0%;
   z-index: -1;
 
-  transition:all ease .5s;
+  transition: all ease .5s;
 }
-.download-cv:hover::before{
-  /* left:100%; */
+
+.download-cv:hover::before {
+
   width: 100%;
-  color:black;
+  color: black;
 
 
 }
@@ -150,27 +153,25 @@
   margin-bottom: 40px;
 }
 
-.tittle-container::before{
+.tittle-container::before {
   content: "";
-    flex: 1;
-    width: 200px;
-    height: 1px;
-    background-image: linear-gradient(to right, #11071F, #481c89, #11071F);
-    /* animation: title-left 4s linear infinite; */
-    /* animation-delay: 0 5; */
-    /* margin: 0 10px; Adjust spacing around the lines */
+  flex: 1;
+  width: 200px;
+  height: 1px;
+  background-image: linear-gradient(to right, #11071F, #481c89, #11071F);
+
 }
 
 
 
-.tittle-container::after{
+.tittle-container::after {
   content: "";
-    flex: 1;
-    width: 200px;
-    height: 1px;
-    background-image: linear-gradient(to right, #11071F, #481c89, #11071F);
-    animation: title-animation 10s linear infinite;
-    /* margin: 0 10px; Adjust spacing around the lines */
+  flex: 1;
+  width: 200px;
+  height: 1px;
+  background-image: linear-gradient(to right, #11071F, #481c89, #11071F);
+  animation: title-animation 10s linear infinite;
+
 }
 
 .tittle-style {
@@ -187,7 +188,7 @@
   z-index: 100;
   border-radius: 2px;
   overflow: hidden;
-  
+
 }
 
 
@@ -198,7 +199,7 @@
   height: 100px;
   background-image: linear-gradient(to right, rgb(70, 19, 19), #460a9a, rgb(98, 79, 82));
   animation: title-animation 10s linear infinite;
-  z-index: 1; /* Ensure it's behind the content */
+  z-index: 1;
 }
 
 .tittle-style::after {
@@ -206,19 +207,22 @@
   position: absolute;
   inset: 1px;
   background-color: #11071F;
-  z-index: 2; /* Also behind the content */
+  z-index: 2;
 }
 
 @keyframes title-animation {
   0% {
     left: -100%;
   }
+
   50% {
     left: 100%;
   }
+
   60% {
     left: 100%;
   }
+
   100% {
     left: -100%;
   }
@@ -269,21 +273,25 @@
     bottom: -20%;
     left: 30%;
   }
+
   25% {
     transform: rotate(45deg);
     bottom: 30%;
     left: 40%;
   }
+
   50% {
     transform: rotate(90deg);
     bottom: 50%;
     left: 60%;
   }
+
   75% {
     transform: rotate(135deg);
     bottom: 70%;
     left: 70%;
   }
+
   100% {
     transform: rotate(180deg);
     bottom: 80%;
@@ -297,26 +305,31 @@
     bottom: 90%;
     left: 40%;
   }
+
   30% {
     transform: rotate(30deg);
     bottom: 70%;
     left: 20%;
   }
+
   50% {
     transform: rotate(60deg);
     bottom: 40%;
     left: 60%;
   }
+
   70% {
     transform: rotate(90deg);
     bottom: 20%;
     left: 80%;
   }
+
   90% {
     transform: rotate(120deg);
     bottom: 10%;
     left: 50%;
   }
+
   100% {
     transform: rotate(150deg);
     bottom: -20%;
@@ -330,21 +343,25 @@
     bottom: 0;
     left: 80%;
   }
+
   25% {
     transform: rotate(45deg);
     bottom: 30%;
     left: 60%;
   }
+
   50% {
     transform: rotate(90deg);
     bottom: 50%;
     left: 50%;
   }
+
   75% {
     transform: rotate(135deg);
     bottom: 70%;
     left: 40%;
   }
+
   100% {
     transform: rotate(180deg);
     bottom: 90%;
@@ -358,21 +375,25 @@
     bottom: -20%;
     left: 15%;
   }
+
   25% {
     transform: rotate(45deg);
     bottom: 35%;
     left: 45%;
   }
+
   50% {
     transform: rotate(90deg);
     bottom: 55%;
     left: 65%;
   }
+
   75% {
     transform: rotate(135deg);
     bottom: 75%;
     left: 85%;
   }
+
   100% {
     transform: rotate(180deg);
     bottom: 90%;
@@ -386,26 +407,31 @@
     bottom: -15%;
     left: 55%;
   }
+
   30% {
     transform: rotate(30deg);
     bottom: 40%;
     left: 25%;
   }
+
   50% {
     transform: rotate(60deg);
     bottom: 60%;
     left: 45%;
   }
+
   70% {
     transform: rotate(90deg);
     bottom: 80%;
     left: 65%;
   }
+
   90% {
     transform: rotate(120deg);
     bottom: 95%;
     left: 85%;
   }
+
   100% {
     transform: rotate(150deg);
     bottom: 100%;
@@ -419,21 +445,25 @@
     bottom: 25%;
     left: 45%;
   }
+
   20% {
     transform: rotate(45deg);
     bottom: 45%;
     left: 65%;
   }
+
   50% {
     transform: rotate(90deg);
     bottom: 65%;
     left: 85%;
   }
+
   70% {
     transform: rotate(135deg);
     bottom: 85%;
     left: 55%;
   }
+
   100% {
     transform: rotate(180deg);
     bottom: 100%;
@@ -445,9 +475,9 @@
 
 
 
- /* skill section title */
 
- .contact {
+
+.contact {
   background-color: #11071F;
   position: relative;
   overflow: hidden;
@@ -457,26 +487,26 @@
 .contact::after {
   content: "";
   position: absolute;
-  width: 100%; /* Adjust the width for the parabola shape */
-  height: 300px; /* Adjust the height for the parabola shape */
+  width: 100%;
+  height: 300px;
   background-image: radial-gradient(circle, rgba(78, 25, 109, 0.3) 10%, transparent 10%);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
-  border-radius: 50% 50% 50% 50%; /* Creates a more circular/elliptical shape */
+  border-radius: 50% 50% 50% 50%;
   z-index: 1;
   pointer-events: none;
 }
 
 .contact::before {
-  top: 60px; /* Adjust for parabola positioning */
-  right: 100px; /* Slight offset for better shape */
-  transform: translate(50%, 0) rotate(45deg); /* Adjust to get a more parabola-like shape */
+  top: 60px;
+  right: 100px;
+  transform: translate(50%, 0) rotate(45deg);
 }
 
 .contact::after {
-  bottom: 70px; /* Adjust for parabola positioning */
-  left: 20px; /* Slight offset for better shape */
-  transform: translate(-50%, 0) rotate(225deg); /* Adjust to get a more parabola-like shape */
+  bottom: 70px;
+  left: 20px;
+  transform: translate(-50%, 0) rotate(225deg);
 }
 
 
@@ -485,7 +515,7 @@
 /* hero image */
 .hero-image {
   /* background-image: url("/test.png"); */
-  
+
   background-size: fill;
   background-repeat: no-repeat;
   background-position: center;
@@ -508,62 +538,65 @@
 }
 
 
-.box-image{
+.box-image {
   background-image: url("/box.png");
 }
 
 
 
-/* skill-box animation  */
-.skill-box{
-  position:relative;
-  overflow:hidden;
-  /* border:3px solid white; */
+
+.skill-box {
+  position: relative;
+  overflow: hidden;
+
   z-index: 10;
   border-radius: 5%;
-  filter:drop-shadow(0 0 10px rgb(10, 7, 106));
+  filter: drop-shadow(0 0 10px rgb(10, 7, 106));
   justify-content: center;
 }
 
 
-.skill-box::before{
-  content:'';
-  position:absolute;
-  width:80px;
-  height:150%;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(60,50,209,0.9164915966386554) 49%, rgba(0,212,255,1) 100%);  animation: rotate 20s linear infinite;
+.skill-box::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 150%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(60, 50, 209, 0.9164915966386554) 49%, rgba(0, 212, 255, 1) 100%);
+  animation: rotate 20s linear infinite;
   transform-origin: center;
 
 }
 
-.skill-box::after{
-  content:"";
+.skill-box::after {
+  content: "";
   position: absolute;
   inset: 3px;
-  
-  /* width: ; */
+
+
   background-color: #11071F;
-  
+
 }
 
 @keyframes rotate {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+
+  100% {
     transform: rotate(360deg);
   }
 }
+
 .skill-box::before {
   z-index: 1;
 }
 
 .skill-box::after {
-  z-index: 2; 
+  z-index: 2;
 }
 
-.skill-box > * {
+.skill-box>* {
   position: relative;
   z-index: 3;
 }
@@ -572,21 +605,21 @@
 
 
 
-/* nav animation  */
+
 .nav-animation {
   position: relative;
-  display: inline-block; /* Adjust based on your element */
+  display: inline-block;
 }
 
 .nav-animation::before {
   content: '';
   position: absolute;
-  bottom: 0; /* Adjust if needed */
+  bottom: 0;
   left: 0;
   width: 0%;
-  height: 1px; /* Adjust the thickness of the underline */
-  background-color: blueviolet; /* Line color */
-  transition: width 0.3s ease-in-out; /* Smooth transition */
+  height: 1px;
+  background-color: blueviolet;
+  transition: width 0.3s ease-in-out;
 }
 
 .nav-animation:hover::before {
@@ -601,15 +634,13 @@
 
 
 
-/* main photo */
 .main-photo {
-  /* width: 100%; */
-  /* height: 300px; */
 
- 
-  background-image: linear-gradient(45deg,#11071F, #1d0e33, #08050b);
+
+
+  background-image: linear-gradient(45deg, #11071F, #1d0e33, #08050b);
   border-radius: 50%;
-  
+
   position: relative;
   animation: main-photo-rotate 9s linear infinite alternate;
 }
@@ -619,10 +650,12 @@
     filter: drop-shadow(0 0 5px rgb(10, 7, 106));
     transform: rotate(0deg);
   }
+
   50% {
     filter: drop-shadow(0 0 10px rgb(10, 7, 106));
     transform: rotate(-3deg);
   }
+
   70% {
     filter: drop-shadow(0 0 20px rgb(10, 7, 106));
     transform: rotate(1deg);
@@ -635,12 +668,12 @@
   }
 }
 
-.main-photo:hover::after{
-  /* filter: drop-shadow(0 0 10px rgb(61, 58, 123)); */
-  content:"Hi, I'm Subesh";
+.main-photo:hover::after {
+
+  content: "Hi, I'm Subesh";
   position: absolute;
-  top:0px;
-  
+  top: 0px;
+
 }
 
 
@@ -648,25 +681,22 @@
 .main-photo::before {
   content: "";
   position: absolute;
-  top: 0px; /* Adjust as needed to position the text above the image */
+  top: 0px;
   right: 25%;
-  /* background-color: #270d4c; */
+
   width: 20px;
   height: 20px;
   border-radius: 10%;
-  font-size: 16px; /* Adjust font size as needed */
-  color: whitesmoke; /* Change color as needed */
+  font-size: 16px;
+  color: whitesmoke;
 }
 
 
-.photo{
+.photo {
   height: 300px;
   border-radius: 50%;
 }
 
-.photo:hover{
+.photo:hover {
   opacity: 0.5;
 }
-
-
-

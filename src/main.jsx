@@ -6,10 +6,10 @@ import { NotificationProvider } from './pages/components/notification.jsx';
 import NotificationComponent from './pages/components/NotificationComponent.jsx';
 
 createRoot(document.getElementById('root')).render(
- 
+
   <NotificationProvider>
-  <NotificationComponent /> {/* Show notifications globally */}
-  <App />
-</NotificationProvider>
- 
+    <NotificationComponent /> {/* Show notifications globally */}
+    <App />
+  </NotificationProvider>
+
 )

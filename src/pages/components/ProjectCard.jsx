@@ -5,7 +5,7 @@ import { FaLink } from "react-icons/fa";
 const ProjectCard = ({ title, description, photo, stack, projectLink }) => {
   return (
     <motion.div
-      className="mt-10 project-card shadow-md hover:shadow-pink-700 hover:shadow-lg shadow-purple-400 border-purple-600 border-[1px] h-[400px] max-w-[320px] flex justify-center flex-col items-start px-2 py-5 skill-box p-5 hover:scale-105"
+      className="mt-10 shadow-md hover:shadow-pink-700 hover:shadow-lg shadow-purple-400 border-purple-600 border-[1px] h-[400px] w-[320px] flex justify-center flex-col items-start px-2 py-5 skill-box p-5 hover:scale-105"
       initial={{ opacity: 0, y: 50 }} 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ amount: 0.2 }} 

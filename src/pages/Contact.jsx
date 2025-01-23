@@ -45,7 +45,7 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ amount: 0.2 }} 
                 transition={{ duration: 0.8, ease: "easeOut" }} 
-                className="h-[400px]  sm:w-[320px] md:w-[600px]  mt-10 skill-box bg-[#1E0C2A] flex-row flex  p-8  shadow-lg shadow-purple-400 hover:shadow-2xl hover:shadow-purple-600 rounded-lg hover:scale-105 transform transition-all duration-300 ease-in-out"
+                className="h-[400px] w-[290px] sm:w-[320px] md:w-[600px]  mt-10 skill-box bg-[#1E0C2A] flex-row flex  p-8  shadow-lg shadow-purple-400 hover:shadow-2xl hover:shadow-purple-600 rounded-lg hover:scale-105 transform transition-all duration-300 ease-in-out"
             >
                 {/* <img src='/contact.gif' alt="Contact" className="w-full h-[200px] object-cover rounded-md" /> */}
                 <div className=' flex-1 px-10 hidden md:flex justify-center items-center'>
