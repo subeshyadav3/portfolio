@@ -1,11 +1,10 @@
 import React from 'react';
-import hero_gradient from '../assets/hero_gradient.png';
-import photo from '../assets/photo.png';
+
 import { BsRocketTakeoffFill } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
-import { motion } from 'framer-motion'; // Importing Framer Motion
-// import line from '../assets/line.svg';
+import { motion } from 'framer-motion'; 
+
 import { DiJavascript } from "react-icons/di";
 import { FaPython } from "react-icons/fa6";
 import { FaNodeJs } from "react-icons/fa";
@@ -50,7 +49,7 @@ const Hero = () => {
                 {/* <img src={line} className='absolute h-[50%]]' /> */}
                 <div className="pt-10">
                     <motion.p
-                        className="font-Preahvihear md:text-2xl lg:text-3xl sm:text-xl pl-10 pt-5"
+                        className="font-Preahvihear text-xl md:text-2xl lg:text-3xl sm:text-xl pl-10 pt-5"
                         initial={{ opacity: 0, y: -20,scale:0.9 }}
                         animate={{ opacity: 1, y: 0,scale:1 }}
                         transition={{ duration: 1, delay: 0.3 }}

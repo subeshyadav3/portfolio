@@ -29,6 +29,7 @@ const Footer = () => {
         }
     };
 
+    const footerNavClass='nav-animation w-fit hover:text-purple-400 -translate-x-2 hover:translate-x-0'
     return (
         <div className="flex  bg-gray-800 text-white w-full h-[250px] items-center justify-center flex-row relative" >
             <div className='flex flex-col gap-3 sm:pr-10 items-center sm:items-start'>
@@ -37,10 +38,10 @@ const Footer = () => {
                 <button className='rounded-md bg-purple-600 p-2' onClick={handleSubscribe}>Subscribe</button>
             </div>
             <div className='flex-col hidden sm:flex gap-2 sm:p-10 cursor-pointer '>
-                <Link to='home' smooth={true} duration={500} className='nav-animation w-fit hover:text-purple-400 '>Home</Link>
-                <Link to='skill' smooth={true} duration={500} className='nav-animation w-fit hover:text-purple-400 '>Skills</Link>
-                <Link to='project' smooth={true} duration={500} className='nav-animation w-fit hover:text-purple-400 '>Projects</Link>
-                <Link to='about' smooth={true} duration={500} className='nav-animation w-fit hover:text-purple-400 '>About</Link>
+                <Link to='home' smooth={true} duration={500} className={footerNavClass}>Home</Link>
+                <Link to='skill' smooth={true} duration={500} className={footerNavClass}>Skills</Link>
+                <Link to='project' smooth={true} duration={500} className={footerNavClass}>Projects</Link>
+                <Link to='about' smooth={true} duration={500} className={footerNavClass}>About</Link>
             </div>
 
             {/* Floating Go To Button */}

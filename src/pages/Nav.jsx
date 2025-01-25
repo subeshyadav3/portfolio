@@ -32,6 +32,8 @@ export default function Nav() {
         
     };
 
+    const navClas="nav-animation  transition-all duration-300 hover:text-pink-400 -translate-x-2 hover:translate-x-0"
+
     return (
         <>
             {/* Navigation */}
@@ -48,27 +50,27 @@ export default function Nav() {
                     </div>
                     <div className="flex flex-row gap-5">
                         <motion.div variants={navLinkVariants} initial="hidden" animate="visible">
-                            <Link to="home" className="nav-animation  transition-all duration-300 hover:text-pink-400">
+                            <Link to="home" className={navClas}>
                                 Home
                             </Link>
                         </motion.div>
                         <motion.div variants={navLinkVariants} initial="hidden" animate="visible">
-                            <Link to="skill" smooth={true} duration={500} className="nav-animation hover:text-pink-400 transition-all duration-300">
+                            <Link to="skill" smooth={true} duration={500} className={navClas}>
                                 Skills
                             </Link>
                         </motion.div>
                         <motion.div variants={navLinkVariants} initial="hidden" animate="visible">
-                            <Link to="project" smooth={true} duration={500} className="nav-animation hover:text-pink-400 transition-all duration-300">
+                            <Link to="project" smooth={true} duration={500} className={navClas}>
                                 Projects
                             </Link>
                         </motion.div>
                         <motion.div variants={navLinkVariants} initial="hidden" animate="visible">
-                            <Link to="about" smooth={true} duration={500} className="nav-animation hover:text-pink-400 transition-all duration-300">
+                            <Link to="about" smooth={true} duration={500} className={navClas}>
                                 About
                             </Link>
                         </motion.div>
                         <motion.div variants={navLinkVariants} initial="hidden" animate="visible">
-                            <Link to="contact" smooth={true} duration={500} className="nav-animation hover:text-pink-400 transition-all duration-300">
+                            <Link to="contact" smooth={true} duration={500} className={navClas}>
                                 Contact
                             </Link>
                         </motion.div>
