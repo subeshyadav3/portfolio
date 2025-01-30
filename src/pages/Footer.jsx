@@ -80,7 +80,7 @@ export default function Footer() {
           <p>© 2025 Developed By Subesh Yadav</p>
         </div>
       </div>
-      <div className="right-5 top-1/2 sm:right-10 absolute">
+      <div className="right-5 top-[80%] sm:top-1/2 sm:right-10 absolute">
                 <Link to="nav" smooth={true} duration={500}>
                     <button className="bg-slate-600 text-white rounded-full p-4 shadow-lg hover:bg-purple-800 transition duration-200 hover:scale-105">
                         ↑
