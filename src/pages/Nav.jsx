@@ -46,7 +46,7 @@ export default function Nav() {
                     transition={{ duration: 0.5 }}
                 >
                     <div>
-                        <img src={logo} alt="Logo" className="w-fit h-10" />
+                        <img src={logo} alt="Logo" className="w-[90px] h-[80px] p-2" />
                     </div>
                     <div className="flex flex-row gap-5">
                         <motion.div variants={navLinkVariants} initial="hidden" animate="visible">

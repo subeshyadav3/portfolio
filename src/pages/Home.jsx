@@ -3,6 +3,8 @@ import Hero from './Hero';
 import Skill from './skill';
 import Contact from './Contact';
 import Project from './projects';
+import StatsSection from './client';
+import Qualification from './qualification';
 
 const Home = () => {
     
@@ -12,8 +14,10 @@ const Home = () => {
      
            <>
             <Hero />
+            {/* <Qualification /> */}
             <Skill />
             <Project />
+            <StatsSection />
             <Contact />
             </>
     );

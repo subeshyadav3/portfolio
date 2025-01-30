@@ -75,10 +75,10 @@ const Progress = () => {
                     <h2 className='flex items-center justify-center mb-5 pb-2 border-b-2 border-[#230e41] text-xl'>
                         Programming
                     </h2>
-                    <CustomProgressBar label="Javascript" completed={90} transitionDuration="6s" />
-                    <CustomProgressBar label="Python" completed={80} transitionDuration="5s" bgColor="#E44700" />
-                    <CustomProgressBar label="C" completed={80} transitionDuration="5s" bgColor="grey" />
-                    <CustomProgressBar label="C++" completed={80} transitionDuration="5s" bgColor="#2596be" />
+                    <CustomProgressBar label="Javascript" completed={90} transitionDuration="3s" />
+                    <CustomProgressBar label="Python" completed={80} transitionDuration="3s" bgColor="#E44700" />
+                    <CustomProgressBar label="C" completed={80} transitionDuration="3s" bgColor="grey" />
+                    <CustomProgressBar label="C++" completed={80} transitionDuration="3s" bgColor="#2596be" />
 
                 </div>
             </motion.div>
@@ -95,10 +95,10 @@ const Progress = () => {
                     <h2 className='flex items-center justify-center mb-5 pb-2 border-b-2 border-[#230e41] text-xl'>
                         Web Dev
                     </h2>
-                    <CustomProgressBar label="React" completed={90} transitionDuration="6s" bgColor="#E705C9" />
-                    <CustomProgressBar label="Node.js" completed={80} transitionDuration="5s" bgColor="#9CAA32" />
-                    <CustomProgressBar label="Express.Js" completed={70} transitionDuration="4s" bgColor="#F25862" />
-                    <CustomProgressBar label="MongoDB" completed={70} transitionDuration="4s" bgColor="#C30E59" />
+                    <CustomProgressBar label="React" completed={90} transitionDuration="3s" bgColor="#E705C9" />
+                    <CustomProgressBar label="Node.js" completed={80} transitionDuration="3s" bgColor="#9CAA32" />
+                    <CustomProgressBar label="Express.Js" completed={70} transitionDuration="3s" bgColor="#F25862" />
+                    <CustomProgressBar label="MongoDB" completed={70} transitionDuration="3s" bgColor="#C30E59" />
                 </div>
             </motion.div>
 

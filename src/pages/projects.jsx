@@ -6,7 +6,7 @@ const Project = () => {
   
     return (
         <div className='flex flex-col ' id='project'>
-            <Title title="Projects" font='font-ougkeh'/>
+                <Title title="Projects" font='font-ougkeh'/>
 
 
             <div className='flex flex-row flex-wrap justify-center items-center gap-10 mb-10 '>
