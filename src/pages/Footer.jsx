@@ -30,8 +30,8 @@ export default function Footer() {
     <div className="min-h-[500px] relative lg:min-h-[400px] flex flex-col justify-between bg-slate-900 text-white p-8 md:p-12">
       <div className="space-y-8">
         <div className="text-center space-y-4">
-          <p className="text-gray-400">Get Latest Updates</p>
-          <h2 className="text-3xl md:text-4xl font-serif">Subscribe For Newsletter</h2>
+          <p className="text-gray-400">Let's Collaborate</p>
+          <h2 className="text-3xl md:text-4xl font-serif">Connet With Me</h2>
         </div>
 
         <div className="flex flex-col md:flex-row gap-4 max-w-xl mx-auto">
@@ -47,7 +47,7 @@ export default function Footer() {
             onClick={handleSubscribe}
             className="px-6 py-2 bg-white text-slate-900 rounded-md hover:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900"
           >
-            Subscribe Now
+            Join 
           </button>
         </div>
 
